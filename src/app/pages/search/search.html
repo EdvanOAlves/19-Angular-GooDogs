@@ -4,12 +4,11 @@
 <!-- Caso não tenha retorno da api-->
 <div *ngIf="dogImages.length === 0">
     <p>{{errorMessage}}</p>
-
 </div>
+
 <main>
     <div class="galery" id="galery">
         <img *ngFor="let img of dogImages" [src]="img" alt="Good Dog">
         <button routerLink="/">voltar</button>
-
     </div>
 </main>
