@@ -1,11 +1,15 @@
 <h2>All the good dogs</h2>
 <h3>Searching for {{breed}}</h3>
 
+<!-- Caso não tenha retorno da api-->
+<div *ngIf="dogImages.length === 0">
+    <p>{{errorMessage}}</p>
 
+</div>
 <main>
     <div class="galery" id="galery">
         <img *ngFor="let img of dogImages" [src]="img" alt="Good Dog">
-        <p *nfIf="!dogImages" {{errorMessage}}></p>
+        <button routerLink="/">voltar</button>
 
     </div>
 </main>

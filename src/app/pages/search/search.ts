@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute/*, RouterModule */ } from '@angular/router';
+import { ActivatedRoute /*, RouterModule */, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { DogSearchService } from '../../services/dog-search-service';
 
 @Component({
   selector: 'app-search',
-  imports: [CommonModule/*, RouterModule */],
+  imports: [CommonModule /*, RouterModule */, RouterLink],
   templateUrl: './search.html',
   styleUrl: './search.css',
 })
@@ -33,7 +33,9 @@ export class Search implements OnInit{
         next: response => {
           this.dogImages = response.message;
         },
-        error: () => this.errorMessage = "Cannot find breed/API error"
+        error: () => {
+          this.errorMessage = "Cannot find breed/API error"
+        }
       })
     })
     
