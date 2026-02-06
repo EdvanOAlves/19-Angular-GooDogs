@@ -1,59 +1,78 @@
-# 19AngularGooDogs
+# Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.2.
+---
 
-## Development server
+## O que é o Angular
 
-To start a local development server, run:
+O Angular é um framework front-end de código aberto, mantido pelo Google, utilizado para o desenvolvimento de aplicações web dinâmicas e escaláveis.  
+Ele é baseado na linguagem TypeScript e utiliza uma arquitetura orientada a componentes, promovendo organização, reutilização de código e facilidade de manutenção.
+
+O Angular é amplamente empregado na construção de Single Page Applications (SPA), onde a navegação ocorre sem a necessidade de recarregar a página inteira.
+
+---
+
+## Por que utilizar o Angular
+
+O uso do Angular é comum em projetos de médio e grande porte por conta da sua arquitetura bem definida, ferramentas integradas e foco em organização e escalabilidade do código, possuindo:
+
+- **Estrutura robusta e padronizada**  
+  Facilita o trabalho em equipe e a manutenção do código ao longo do tempo.
+
+- **Tipagem forte com TypeScript**  
+  Reduz erros em tempo de desenvolvimento e melhora a qualidade do software.
+
+- **Ferramentas integradas**  
+  Possui recursos nativos como roteamento, formulários, validações e injeção de dependência.
+
+- **Escalabilidade**  
+  Adequado para aplicações corporativas e projetos de longo prazo.
+
+---
+
+## Cenários em que o Angular não é indicado
+
+- **Aplicações simples ou de pequeno porte**  
+  O uso do framework pode ser excessivo para projetos básicos.
+
+- **Projetos com prazo muito curto**  
+  A curva de aprendizado pode impactar a velocidade inicial do desenvolvimento.
+
+- **Páginas estáticas ou landing pages**  
+  Frameworks mais leves ou HTML/CSS puro podem ser mais eficientes.
+
+---
+
+## Instalação e Configuração
+
+### Requisitos do ambiente
+
+Antes de iniciar o desenvolvimento com Angular, é necessário possuir:
+
+- Node.js
+- npm (instalado junto com o Node.js)
+- Angular CLI
+- Editor de código (ex: Visual Studio Code)
+- Navegador web
+
+---
+
+###  Instalação do Angular CLI
+
+Para instalar a ferramenta do Angular
+
+```bash
+npm install -g @angular/cli
+```
+Para criar um projeto
+```bash
+ng new nome-do-projeto
+```
+Para executar a aplicação 
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
 ```bash
-ng generate component component-name
+npm start
 ```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
