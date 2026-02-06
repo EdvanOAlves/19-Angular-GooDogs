@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero{
+    gap: 2rem;
+}
+
+.search-pane{
+    flex-direction: row;
+    height: 32px;
+    gap: 1rem;
+    width: 50%;
+}
+
+input{
+    flex:3;
+    height: 100%;
+
+    border-style: solid;
+    border-color: rgb(143, 66, 42);
+    border-radius: 16px;
+    padding-inline:  16px;
+}
+
+button{
+    height: 100%;
+    padding-inline: 2rem;
+    border-radius: 16px;
+    border-style: none;
+    color: wheat;
+    background-color: rgb(143, 66, 42);
+}
+
+button:hover{
+    cursor: pointer;
+
+}
+
