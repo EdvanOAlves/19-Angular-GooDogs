@@ -1,7 +1,7 @@
 <app-page-title></app-page-title>
 <div class="hero">
     <div class="search-pane">
-        <input #search type="text" placeholder="Shiba Inu">
-        <button>Search</button>
+        <input #search type="text" placeholder="Shiba">
+        <button (click)="searchDogs(search.value)">Search</button>
     </div>
 </div>

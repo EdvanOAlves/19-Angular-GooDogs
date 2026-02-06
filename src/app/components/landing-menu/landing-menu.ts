@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { PageTitle } from '../page-title/page-title';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-landing-menu',
@@ -8,5 +9,9 @@ import { PageTitle } from '../page-title/page-title';
   styleUrl: './landing-menu.css',
 })
 export class LandingMenu {
+  constructor(private router: Router){}
+  searchDogs(searchQuery:string){
+    this.router.navigate(['/search'])
+  }
 
 }
