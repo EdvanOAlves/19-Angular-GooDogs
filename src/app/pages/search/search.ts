@@ -47,7 +47,7 @@ export class Search implements OnInit {
       //   }
       // })
 
-      this.dogSearchService.searchByBreed(this.breed)
+      this.dogSearchService.searchByBreed(this.breed.toLowerCase())
         .then(data => {
           console.log(data)
           if (data.status != 'success'){
