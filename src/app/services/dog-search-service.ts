@@ -11,9 +11,18 @@ export class DogSearchService {
   //Utilizando de private pois só será necessário ensse recurso
   constructor(private http: HttpClient){}
 
-  searchByBreed(breed: string): Observable<any>{
+  // Teste com observer
+  // searchByBreed(breed: string): Observable<any>{
+  //   const url = `https://dog.ceo/api/breed/${breed}/images`
+  //   return this.http.get<any>(url)
+  // }
+
+  // Versão com fetch
+  async searchByBreed(breed:string): Promise<any>{
     const url = `https://dog.ceo/api/breed/${breed}/images`
-    return this.http.get<any>(url)
+    const response = await fetch(url)
+    const images = await response.json()
+    return (images.message)
   }
   
 }
