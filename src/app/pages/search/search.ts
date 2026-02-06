@@ -49,9 +49,8 @@ export class Search implements OnInit {
 
       this.dogSearchService.searchByBreed(this.breed)
         .then(data => {
-          console.log(data.code)
-          if (data.code != 200){
-            console.log(this.errorMessage)
+          console.log(data)
+          if (data.status != 'success'){
             this.errorMessage = 'Cannot find breed/API error'
             this.cdr.detectChanges();
           }else{
