@@ -1,0 +1,13 @@
+main{
+    padding: 10px;
+}
+
+.galery{
+    display: columns;
+    columns: 4;
+    max-width: 100vw;
+}
+img{
+    width: 100%;
+    padding-bottom: 1rem;
+}

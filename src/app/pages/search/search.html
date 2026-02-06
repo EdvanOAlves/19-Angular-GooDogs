@@ -1,1 +1,11 @@
-<p>search works!</p>
+<h2>All the good dogs</h2>
+<h3>Searching for {{breed}}</h3>
+
+
+<main>
+    <div class="galery" id="galery">
+        <img *ngFor="let img of dogImages" [src]="img" alt="Good Dog">
+        <p *nfIf="!dogImages" {{errorMessage}}></p>
+
+    </div>
+</main>

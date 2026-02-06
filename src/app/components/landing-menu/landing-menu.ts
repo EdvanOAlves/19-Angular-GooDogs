@@ -11,7 +11,9 @@ import { Router } from '@angular/router';
 export class LandingMenu {
   constructor(private router: Router){}
   searchDogs(searchQuery:string){
-    this.router.navigate(['/search'])
+    this.router.navigate(['/search'],
+      {queryParams: {q: searchQuery}}
+    )
   }
 
 }
